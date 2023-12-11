@@ -27,6 +27,7 @@
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "per-env": "^1.0.2",
+    "pg": "^8.11.3",
     "sequelize": "^6.35.1",
     "sequelize-cli": "^6.6.2",
     "sqlite3": "^5.1.6"
