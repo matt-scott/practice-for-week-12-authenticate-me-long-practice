@@ -1,9 +1,12 @@
 'use strict';
 const bcrypt = require('bcryptjs');
 
-const {
-  Model
-} = require('sequelize');
+// const {
+//   Model
+// } = require('sequelize');
+
+const { Model, Validator } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -52,6 +55,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
+    
   }
   User.init({
     // not null, unique, min 4 characters, max 30 characters, isNotEmail
